@@ -7,23 +7,17 @@ require 'minitest/pride'
 # https://josh.works/turing-backend-prep-02-first-tests-and-making-them-pass
 
 class StringTest < Minitest::Test
-  def test_1
-    
+  def test_1  
     name = "alice"
-    # In place of the line below, call a method on the name variable
-    # defined above to acheive the expected output.
     actual = name.capitalize
     expected = "Alice"
-
     assert_equal expected, actual
   end
 
   def test_2
     name = "aLiCe"
-    # In place of the line below, call a method to achieve the expected output.
     actual = name.upcase
     expected = "ALICE"
-
     assert_equal expected, actual
   end
 
@@ -38,28 +32,24 @@ class StringTest < Minitest::Test
 
   def test_4  
     rhyme = "peter piper picked a peck of picked peppers"
-    # In place of the line below, call a method to achieve the expected output.
-    actual = rhyme
+    actual = rhyme.reverse
     expected = "sreppep dekcip fo kcep a dekcip repip retep"
-
     assert_equal expected, actual
   end
 
   def test_5
-    skip
     word = "ticking"
     # In place of the line below, call a method to achieve the expected output.
-    actual = word.______
+    actual = word.sub("t", "k")
     expected = "kicking"
 
     assert_equal expected, actual
   end
 
   def test_6
-    skip
     word = "ticking"
     # In place of the line below, call a method to achieve the expected output.
-    actual = word.______
+    actual = word.sub("tic","cloc")
     expected = "clocking"
 
     assert_equal expected, actual
