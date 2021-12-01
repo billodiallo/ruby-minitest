@@ -49,34 +49,31 @@ class StringTest < Minitest::Test
   def test_6
     word = "ticking"
     # In place of the line below, call a method to achieve the expected output.
-    actual = word.sub("tic","cloc")
+    actual = word.sub("ti","clo")
     expected = "clocking"
 
     assert_equal expected, actual
   end
 
   def test_7
-    skip
     words = "five sleepy kittens"
     # In place of the line below, call a method to achieve the expected output.
-    actual = words.______
+    actual = words.gsub("e", "*")
     expected = "fiv* sl**py kitt*ns"
 
     assert_equal expected, actual
   end
 
   def test_8
-    skip
     greeting = "Hello!!"
     # In place of the line below, call a method to achieve the expected output.
-    actual = greeting._____
+    actual = greeting.sub("!!","!")
     expected = "Hello!"
 
     assert_equal expected, actual
   end
 
   def test_9
-    skip
     greeting = "Hello!!\n"
     # In place of the line below, call a method to achieve the expected output.
     actual = greeting._____
