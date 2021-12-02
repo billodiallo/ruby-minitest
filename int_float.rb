@@ -12,4 +12,13 @@ class Int_float < Minitest::Test
         assert_equal 20, sum
       end
 
+      def test_2
+        lucky = 7
+        unlucky = 13
+        # Using the two variables defined above,
+        # subtract the unlucky from the lucky
+        difference = lucky - unlucky
+        assert_equal -6, difference
+      end
+
 end
