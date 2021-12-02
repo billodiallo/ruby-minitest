@@ -31,4 +31,13 @@ class Int_float < Minitest::Test
         assert_equal 1, quotient
       end
 
+      def test_4
+        lucky = 7
+        unlucky = 13
+        # Using the two variables defined above,
+        # divide unlucky by lucky
+        quotient= (unlucky.to_f/lucky)
+        assert_equal 1.8571428571428572, quotient
+      end  
+
 end
