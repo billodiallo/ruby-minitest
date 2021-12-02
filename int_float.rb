@@ -65,4 +65,12 @@ class Int_float < Minitest::Test
         assert_equal 3, rounded
       end  
 
+      def test_8
+        pi = 3.14
+        # Using the variable defined above,
+        # round the number to one decimal place
+        rounded = pi.round(1)
+        assert_equal 3.1, rounded
+      end  
+
 end
