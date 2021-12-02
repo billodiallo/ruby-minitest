@@ -47,6 +47,14 @@ class Int_float < Minitest::Test
         # find the remainder of the unlucky divided by the lucky
         remainder = unlucky % lucky
         assert_equal 6, remainder
+      end 
+
+      def test_6
+        lucky = 7
+        # Using the variable defined above,
+        # find out if the lucky number is even
+        even = lucky.even?
+        assert_equal false, even
       end  
 
 end
