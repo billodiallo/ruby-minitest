@@ -71,6 +71,14 @@ class Int_float < Minitest::Test
         # round the number to one decimal place
         rounded = pi.round(1)
         assert_equal 3.1, rounded
+      end 
+
+      def test_9
+        pi = 3.14
+        # Using the variable defined above,
+        # round the number to the next highest whole number
+        rounded = pi.to_f.ceil
+        assert_equal 4, rounded
       end  
 
 end
