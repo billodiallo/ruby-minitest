@@ -21,4 +21,14 @@ class Int_float < Minitest::Test
         assert_equal -6, difference
       end
 
+      def test_3
+        lucky = 7
+        unlucky = 13
+        # Using the two variables defined above,
+        # divide unlucky by lucky
+        # NOTE: this is integer division
+        quotient = unlucky/lucky
+        assert_equal 1, quotient
+      end
+
 end
