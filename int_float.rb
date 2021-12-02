@@ -40,4 +40,13 @@ class Int_float < Minitest::Test
         assert_equal 1.8571428571428572, quotient
       end  
 
+      def test_5
+        lucky = 7
+        unlucky = 13
+        # Using the two variables defined above,
+        # find the remainder of the unlucky divided by the lucky
+        remainder = unlucky % lucky
+        assert_equal 6, remainder
+      end  
+
 end
