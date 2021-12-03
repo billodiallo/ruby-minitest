@@ -66,5 +66,16 @@ class ArraysTest < Minitest::Test
             last_element = world_cup.pop()
             # assert_equal "Portugal", last_element
             assert_equal ["Germany", "Mexico", "Iceland"], world_cup
-          end   
+          end
+
+          def test_5
+  
+            karaoke = ["Shake it Off", "Dancing Queen", "Bohemian Rhapsody"]
+            # Call a method on the karaoke variable to ask whether "Toxic"
+            # is an element or not
+            toxic_in_array = karaoke.include?"Toxic"
+            assert_equal false, toxic_in_array
+            end
+
+
 end
