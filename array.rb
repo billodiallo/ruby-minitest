@@ -103,14 +103,14 @@ class ArraysTest < Minitest::Test
           end
 
           def test_6
-            skip
+      
             teams = ["Rockies", "Avalanche", "Nuggets", "Broncos", "Rapids"]
             # Call a method on the teams variable to get the second, third, and fourth teams
-            some_teams = teams
+            some_teams = teams[1..3]
             assert_equal ["Avalanche", "Nuggets", "Broncos"], some_teams
         
             # Now use a different method on the teams variable to get the first and second teams
-            some_teams = teams
+            some_teams = teams.take(2)
             assert_equal ["Rockies", "Avalanche"], some_teams
           end
         
@@ -130,34 +130,24 @@ class ArraysTest < Minitest::Test
             assert_equal ["Squirtle", "Charmander", "Bulbasaur", "Pikachu", "Staryu"], pokemon
           end
         
-          def test_9
-            skip
-            scores = [23, 56, 34, 29, 48]
-            # Call a method on the scores variables that will
-            # move the elements two spots to the left
-            new_scores = scores
-            assert_equal [34, 29, 48, 23, 56], new_scores
-        
-            # Now call a method on the scores variables that will
-            # move the elements one spot to the right
-            new_scores = scores
-            assert_equal [48, 23, 56, 34, 29], new_scores
-          end
+       
         
           def test_10
-            skip
-            vowels = ["a", "e", "y", "i", "o", "u", "y"]
+          
+            vowels = ["a", "e", "y", "i", "o", "u", "y"].delete_if {|x| x == "y"}
+           
             # Call a method on the vowels variable to remove "y"
         
             assert_equal ["a", "e", "i", "o", "u"], vowels
+            
           end
         
           def test_11
-            skip
+        
             furniture = ["couch", "bed", "table"]
             # Call a method on the furniture variable to add the element
             # "dresser" in between the elements "couch" and "bed"
-            new_furniture = furniture
+            new_furniture = furniture.insert(1,"dresser")
             assert_equal ["couch", "dresser", "bed", "table"], new_furniture
           end
         
